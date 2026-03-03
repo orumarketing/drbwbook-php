@@ -5,6 +5,11 @@
 	include_once __DIR__ . '/../config.php';
 	$this_page_book_title = 'Empowered to Lead';
 	$is_the_home_page = true;
+	$hero_slug = 'empowered-to-lead';
+	$hero_bg_style = "background: linear-gradient(45deg, #05223000, #05223070), url(" . $base_url . "assets/img/new-images/sky-background.jpg); background-size: cover; background-repeat: no-repeat;";
+	$hero_book_img = $base_url . 'assets/img/new-images/empowered-to-lead-cover.png';
+	$hero_book_img_alt = 'Empowered to Lead book';
+	$hero_show_discount = true;	
 ?>
 
 <head>
@@ -278,48 +283,7 @@
 			alt="" style="display:none"
 			src="https://www.facebook.com/tr?id=565106160842111&ev=PageView&noscript=1"></noscript>
 	<?php include_once __DIR__ . '/../assets/includes/top-nav.php'; ?>
-	<div class="page-header page-header-small header-filter">
-		<div class="page-header-image" style="background: linear-gradient(45deg, #05223000, #05223070),
-		  url(<?php echo $base_url; ?>assets/img/new-images/sky-background.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		">
-			<div class="text-center text-uppercase navbottom space-above-hero d-none">
-				<p class="navbottom-text">&nbsp;</p>
-			</div>
-			<div class="container">
-				<div class="row align-items-center text-left">
-					<div class="col-lg-7 pl-0 position-relative">
-						<img class="discount-tag" src="<?php echo $base_url; ?>assets/img/new-images/discount-tag.png" alt="50% off">
-						<img class="pop-out-book mr-lg-5"
-							src="<?php echo $base_url; ?>assets/img/new-images/empowered-to-lead-cover.png" width="100%" alt="Empowered to Lead book">
-					</div>
-					<div class="col-lg-5 hero">
-						<h1 class="display-3 dark-text order-lg-0">EMPOWERED TO LEAD</h1>
-						<p class="lead pb-0 dark-text order-lg-1"><em>Empowered to Lead: Becoming a Leader Who Impacts the World</em> by Dr. Billy Wilson equips you to lead with integrity, courage, and vision—impacting the world through faith, wisdom, and Spirit-empowered leadership.</p>
-						<div class="my-5">
-							<div class="d-none d-lg-block"> 
-								<a class="btn btn-secondary hero-btn mt-2" href="https://shop.harpandswordmedia.com/products/empowered-to-lead?variant=47637651390702"
-									target="_blank" data-astro-cid-xvd67bzn>Buy Now </a> 
-								<a class="btn btn-secondary hero-btn mt-2"
-									href="https://keap.app/contact-us/6367487851531898" target="_blank"
-									data-astro-cid-xvd67bzn>Get A Free Chapter</a> 
-							</div>
-							<div class="d-lg-none"> 
-								<a class="btn btn-dark btn-block hero-btn"
-									href="https://shop.harpandswordmedia.com/products/empowered-to-lead?variant=47637651390702"
-									target="_blank" data-astro-cid-n2irbncb>Buy Now </a> 
-								<a class="btn btn-dark btn-block hero-btn"
-									href="https://keap.app/contact-us/6367487851531898" target="_blank"
-									data-astro-cid-n2irbncb>Get A Free Chapter</a> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<?php include __DIR__ . '/../assets/includes/hero-db.php'; ?>
 	<section class="section about-the-book pb-5 mb-0 bd-btm-true" id="about">
 		<div class="container col-md-11 col-xl-10">
 			<div class="row">

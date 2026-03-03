@@ -5,6 +5,12 @@
 	include_once __DIR__ . '/../config.php';
 	$this_page_book_title = 'The Power of One';
 	$is_the_home_page = true;
+	$hero_slug = 'the-power-of-one';
+	$hero_bg_style = "background: linear-gradient(45deg, #1e0d0d00, #6c6c6c69), url(" . $base_url . "assets/img/new-images/PoOBackground2-min.jpg); background-size: cover; background-repeat: no-repeat;";
+	$hero_book_img = $base_url . 'assets/img/new-images/power1cover.png';
+	$hero_book_img_alt = 'The Power of One book';
+	$hero_show_discount = true;
+	$hero_fallback_free_label = 'Free Study Guide';
 ?>
 
 <head>
@@ -278,46 +284,7 @@
 			alt="" style="display:none"
 			src="https://www.facebook.com/tr?id=565106160842111&ev=PageView&noscript=1"></noscript>
 	<?php include_once __DIR__ . '/../assets/includes/top-nav.php'; ?>
-	<div class="page-header page-header-small header-filter">
-		<div class="page-header-image" style="background: linear-gradient(45deg, #1e0d0d00, #6c6c6c69),
-		  url(<?php echo $base_url; ?>assets/img/new-images/PoOBackground2-min.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		">
-			<div class="text-center text-uppercase navbottom space-above-hero d-none">
-				<p class="navbottom-text">&nbsp;</p>
-			</div>
-			<div class="container">
-				<div class="row align-items-center text-left">
-					<div class="col-lg-7 pl-0 position-relative">
-						<img class="discount-tag" src="<?php echo $base_url; ?>assets/img/new-images/discount-tag.png" alt="50% off">
-						<img class="pop-out-book mr-lg-5"
-							src="<?php echo $base_url; ?>assets/img/new-images/power1cover.png" width="100%" alt="The Power Of One book">
-					</div>
-					<div class="col-lg-5 hero">
-						<h1 class="display-3 dark-text order-lg-0">The Power Of One</h1>
-						<p class="lead pb-0 dark-text order-lg-1">How can eight billion people have an authentic
-							encounter with Jesus Christ?<br><strong><em>The Power of One</em></strong> provides a clear
-							and attainable path toward the renewal of the Great Commission.</p>
-						<div class="my-5">
-							<div class="d-none d-lg-block"> <a class="btn btn-secondary hero-btn mt-2"
-									href="https://shop.harpandswordmedia.com/products/the-power-of-one"
-									target="_blank" data-astro-cid-xvd67bzn>Buy Now </a> <a
-									class="btn btn-secondary hero-btn mt-2"
-									href="<?php echo $base_url; ?>assets/pdfs/the-power-of-one-study-guide.pdf" target="_blank"
-									data-astro-cid-xvd67bzn>Free Study Guide </a> </div>
-							<div class="d-lg-none"> <a class="btn btn-dark btn-block hero-btn"
-									href="https://shop.harpandswordmedia.com/products/the-power-of-one"
-									target="_blank" data-astro-cid-n2irbncb>Buy Now </a> <a
-									class="btn btn-dark btn-block hero-btn"
-									href="<?php echo $base_url; ?>assets/pdfs/the-power-of-one-study-guide.pdf" target="_blank"
-									data-astro-cid-n2irbncb>Free Study Guide </a> </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<?php include __DIR__ . '/../assets/includes/hero-db.php'; ?>
 	<section class="section about-the-book pb-5 mb-0 bd-btm-true" id="about">
 		<div class="container col-md-11 col-xl-10">
 			<div class="row">

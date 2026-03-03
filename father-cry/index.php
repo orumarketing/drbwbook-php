@@ -3,6 +3,13 @@
 <?php
 include_once __DIR__ . '/../config.php';
 $this_page_book_title = 'Father Cry';
+$hero_slug = 'father-cry';
+$hero_bg_style = "background: linear-gradient(45deg, #1e0d0d00, #6c6c6c69), url(" . $base_url . "assets/img/new-images/bundle-program-background.jpg); background-size: cover; background-repeat: no-repeat;";
+$hero_book_img = $base_url . 'assets/img/father-cry-no-background.webp';
+$hero_book_img_alt = 'Father Cry book';
+$hero_show_discount = true;
+$hero_fallback_buy_label = 'Order Now';
+$hero_fallback_free_label = 'Get Free Chapter';
 ?>
 
 <head>
@@ -279,38 +286,7 @@ $this_page_book_title = 'Father Cry';
       alt="" style="display:none"
       src="https://www.facebook.com/tr?id=565106160842111&ev=PageView&noscript=1"></noscript>
   <?php include_once __DIR__ . '/../assets/includes/top-nav.php'; ?>
-  <div class="page-header page-header-small header-filter">
-    <div class="page-header-image" style="background: linear-gradient(45deg, #1e0d0d00, #6c6c6c69),
-		  url(<?php echo $base_url; ?>assets/img/new-images/bundle-program-background.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		">
-      <div class="text-center text-uppercase navbottom space-above-hero d-none">
-        <p class="navbottom-text">&nbsp;</p>
-      </div>
-      <div class="container">
-        <div class="row align-items-center text-left">
-          <div class="col-lg-7 pl-0 position-relative">
-            <img class="discount-tag" src="<?php echo $base_url; ?>assets/img/new-images/discount-tag.png" alt="50% off">
-            <img class="pop-out-book mr-lg-5" src="<?php echo $base_url; ?>assets/img/father-cry-no-background.webp" width="100%" alt="Father Cry book"> </div>
-          <div class="col-lg-5 hero">
-            <h1 class="display-3 dark-text order-lg-0">Father Cry</h1>
-            <p class="lead pb-0 dark-text order-lg-1"><em>Father Cry</em> addresses the generational longing for spiritual parents and the deep desire to experience the love of our heavenly Father.</p>
-            <div class="my-5">
-              <div class="d-none d-lg-block"> 
-                <a class="btn btn-secondary hero-btn mt-2" href="https://shop.harpandswordmedia.com/products/father-cry" target="_blank" data-astro-cid-xvd67bzn>Order Now</a> 
-                <a class="btn btn-secondary hero-btn mt-2" href="https://keap.app/contact-us/681454306823001" target="_blank" data-astro-cid-xvd67bzn>Get Free Chapter</a> 
-              </div>
-              <div class="d-lg-none">
-                <a class="btn btn-dark btn-block hero-btn" href="https://shop.harpandswordmedia.com/products/father-cry" target="_blank" data-astro-cid-n2irbncb>Order Now</a> 
-                <a class="btn btn-dark btn-block hero-btn" href="https://keap.app/contact-us/681454306823001" target="_blank" data-astro-cid-n2irbncb>Get Free Chapter</a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php include __DIR__ . '/../assets/includes/hero-db.php'; ?>
   
   <section class="section about-the-book pb-5 mb-0 bd-btm-true" id="about">
     <div class="container col-md-11 col-xl-10">
