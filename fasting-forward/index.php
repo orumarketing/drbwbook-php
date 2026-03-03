@@ -338,72 +338,13 @@
     
     <!-- Author Section -->
 	<?php require_once __DIR__ . '/../assets/includes/author-section.php'; ?>
+	<?php include __DIR__ . '/../assets/includes/testimonials-db.php'; ?>
 
-    <section class="section testimonials team-1 bd-btm-true">
-        <div class="container col-md-11 col-xl-10">
-            <h3 class="display-3 px-3 mb-3 text-center text-uppercase">WHAT OTHERS ARE SAYING</h3>
-            <div class="row">
-                <div class="col-lg-6 profile">
-                    <div>
-                        <div class="testimony">
-                            <p class="lead m-0 pb-3"> <b>&ldquo;
-                                    Fasting is one of the most misunderstood and neglected spiritual disciplines. In
-                                    Fasting Forward, you will discover the biblical reasons for, and benefits of, this
-                                    practice.
-                                    &rdquo;</b> <br> <em>&ndash; Christine Caine Founder, A21 and Propel Women</em> </p>
-                        </div>
-                        <div class="testimony">
-                            <p class="lead m-0 pb-3"> <b>&ldquo;
-                                    Dr. Billy Wilson skillfully shares insight into the importance of fasting with
-                                    practical tips and strong biblical teaching. If you want to learn more about fasting
-                                    and strengthen your relationship with God, this book is for you!
-                                    &rdquo;</b> <br> <em>&ndash; Russell Evans, Global Senior Pastor, Planetshakers
-                                    Church</em> </p>
-                        </div>
-                        <div class="testimony">
-                            <p class="lead m-0 pb-3"> <b>&ldquo;
-                                    This latest work about the spiritual discipline of fasting by the president of one
-                                    of the most prestigious Christian universities in the world proves that fasting
-                                    stands the test of academic rigor in our most prestigious universities.
-                                    &rdquo;</b> <br> <em>&ndash; Jentezen Franklin, Senior Pastor, Free Chapel, NY Times
-                                    Best-Selling Author</em> </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 profile">
-                    <div>
-                        <div class="testimony">
-                            <p class="lead m-0 pb-3"> <b>&ldquo;
-                                    This book challenged, convicted, and inspired me in ways I didn’t expect. Fasting
-                                    Forward will move you to embrace a deeper life of fasting. I pray you will read it
-                                    and reap the vast blessings of fasting.
-                                    &rdquo;</b> <br> <em>&ndash; Brian Alarid, President, World Prays,Chairman, Pray For
-                                    All</em> </p>
-                        </div>
-                        <div class="testimony">
-                            <p class="lead m-0 pb-3"> <b>&ldquo;
-                                    I have read many books on fasting, but this is by far one of the very best. Dr.
-                                    Wilson has the ability to make this spiritual exercise one that every believer uses
-                                    to release breakthrough in their life.
-                                    &rdquo;</b> <br> <em>&ndash; Cindy Jacobs, Founder, Generals International</em> </p>
-                        </div>
-                        <div class="testimony">
-                            <p class="lead m-0 pb-3"> <b>&ldquo;
-                                    Exploring the transformative power of fasting, this book offers a compelling look at
-                                    how abstaining nourishes and strengthens one’s bond with the Lord, opening doors to
-                                    profound personal and spiritual growth.
-                                    &rdquo;</b> <br> <em>&ndash; Dr. Mike Rakes, President, Evangel University</em> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 	<section class="section bd-btm-false" id="books">
         <div class="container col-md-11 col-xl-10">
             <h3 class="display-3 p-3 text-center text-uppercase">Other Titles by Dr. Wilson</h3>
             <div class="row mt-3">
-                <?php require_once __DIR__ . '/../assets/includes/more-titles.php'; ?>
+                <?php require_once __DIR__ . '/../assets/includes/more-titles-db.php'; ?>
             </div>
         </div>
     </section>

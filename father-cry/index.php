@@ -388,7 +388,7 @@ $this_page_book_title = 'Father Cry';
       <div class="container col-md-11 col-xl-10">
           <h3 class="display-3 p-3 text-center text-uppercase">Other Titles by Dr. Wilson</h3>
           <div class="row mt-3">
-              <?php require_once __DIR__ . '/../assets/includes/more-titles.php'; ?>
+		<?php require_once __DIR__ . '/../assets/includes/more-titles-db.php'; ?>            
           </div>
       </div>
   </section>

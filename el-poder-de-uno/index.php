@@ -352,54 +352,13 @@
 		</div>
 	</section>
 	
-	<section class="section testimonials team-1 bd-btm-true">
-		<div class="container col-md-11 col-xl-10">
-			<h3 class="display-3 px-3 mb-3 text-center text-uppercase">LO QUE OTROS ESTÁN DICIENDO</h3>
-			<div class="row">
-				<div class="col-lg-6 profile">
-					<div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo; <em>El Poder de Uno</em> explica por qué y cómo cada uno de nosotros podemos hacer nuestra parte para alcanzar a cada UNO con las Buenas Nuevas de que son importantes para Dios, que Cristo murió por ellos ¡y que Él los quiere en Su familia para siempre!&rdquo;</b> 
-							<br><em>&ndash; Rick Warren, Autor de Una Vida con Propósito</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo; El Dr. Wilson nos recuerda que todas las personas son importantes para Dios; todas las personas tienen la capacidad de responder al mensaje de salvación, y todas las personas pueden realizar el potencial que Dios les ha dado. <em>El Poder de Uno</em> es un llamado de ir más allá del pensamiento misionológico hacia la acción misionológica y es un recordatorio de que terminar la Gran Comisión es factible.&rdquo;</b> 
-							<br> <em>&ndash; Doug Clay, Supervisor General, Assemblies of God</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-								Si estás buscando un libro que te desafíe a salir de tu zona de confort y compartir el amor de Cristo con los demás, <em>El Poder de Uno</em> es el libro para ti. ¡Lo recomiendo encarecidamente!
-								&rdquo;</b> <br> <em>&ndash; Reggie Dabbs, The Youth Alliance</em> </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 profile">
-					<div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									Con urgencia en sus páginas, este libro estimula a que cada creyente se ponga de pie en esta hora para declarar que &#39;Jesucristo es el Señor.&#39; Este libro te desafiará e inspirará a hacer que tu &#39;Sí&#39; cuente para la eternidad.
-									&rdquo;</b> <br> <em>&ndash; Nathan Morris, Fundador y Presidente de Shake The Nations Ministries</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									Creo que después de leer este libro, cada persona se sentirá conmovida en su corazón por terminar inmediatamente la Gran Comisión. Para el año 2033, cada &#39;uno&#39; tendrá un encuentro auténtico con el Señor Jesucristo.
-									&rdquo;</b> <br> <em>&ndash; Pastor Niko Njotorahardjo, Pastor Principal, Gereja Bethel Indonesia</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									Si algo nos ha enseñado nuestra cultura en los últimos años es que nos presenta un mundo que necesita desesperadamente las Buenas Nuevas de Jesús. En <em>El Poder de Uno</em>, el Dr. Billy Wilson ofrece tanto el desafío que tenemos ante nosotros como la extraordinaria oportunidad de proclamar el Evangelio en el poder del Espíritu.
-									&rdquo;</b> <br> <em>&ndash; Ed Stetzer, Decano de la Facultad de Talbot School of Theology</em> </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<?php include __DIR__ . '/../assets/includes/testimonials-db.php'; ?>
+
 	<section class="section bd-btm-false" id="books">
         <div class="container col-md-11 col-xl-10">
             <h3 class="display-3 p-3 text-center text-uppercase">Otros títulos del Dr. Wilson</h3>
             <div class="row mt-3">
-                <?php require_once __DIR__ . '/../assets/includes/more-titles.php'; ?>
+                <?php require_once __DIR__ . '/../assets/includes/more-titles-db.php'; ?>
             </div>
         </div>
     </section>

@@ -361,81 +361,13 @@
 	<!-- Author Section -->
 	<?php require_once __DIR__ . '/../assets/includes/author-section.php'; ?>
 	
-	<section class="section testimonials team-1 bd-btm-true">
-		<div class="container col-md-11 col-xl-10">
-			<h3 class="display-3 px-3 mb-3 text-center text-uppercase">WHAT OTHERS ARE SAYING</h3>
-			<!--<div class="row align-items-center">-->
-			<div class="row">
-				<div class="col-lg-6 profile">
-					<div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo; <em>The Power of One</em> explains why and how each of
-									us can do our part in reaching everyONE with the Good News
-									that they matter to God, Christ’s died for them, and that He
-									wants them in His family forever!
-									&rdquo;</b> <br> <em>&ndash; By Rick Warren, The Purpose Drive Life</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									Dr. Wilson reminds us that all people matter to God;
-									all people have the ability to respond to the message of
-									salvation, and all people can fulfill their God-given
-									potential. <em>The Power of One</em> is a call to move beyond
-									missiological thinking into missiological action and is a
-									reminder that finishing the Great Commission is
-									doable!
-									&rdquo;</b> <br> <em>&ndash; Doug Clay, General Superintendent, Assemblies of
-									God</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									If you are looking for a book that will challenge you
-									to step out of your comfort zone and share the love of Christ
-									with others, <em>The Power of One</em> is the book for you. I
-									highly recommend it!
-									&rdquo;</b> <br> <em>&ndash; Reggie Dabbs, The Youth Alliance</em> </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 profile">
-					<div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									With urgency in the pages, this book activates every
-									believer to stand in this hour to declare that ‘Jesus Christ
-									is Lord.’ This book will both challenge and inspire you to
-									make your ‘Yes’ count for eternity.
-									&rdquo;</b> <br> <em>&ndash; Nathan Morris, Founder and President, Shake The Nations
-									Ministries</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									I believe that after reading this book, every person
-									will be moved by their heart to immediately finish the Great
-									Commission. By 2033, everyone will have an authentic encounter
-									with the Lord.
-									&rdquo;</b> <br> <em>&ndash; Pastor Niko Njotorahardjo, Senior Pastor, Gereja Bethel
-									Indonesia</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									If our culture has shown us anything in recent years,
-									it presents to us a world in desperate need of the good news
-									of Jesus. <em>The Power of One</em>, offers both the
-									challenge before us and the remarkable opportunity to proclaim
-									the gospel in the power of the Spirit.
-									&rdquo;</b> <br> <em>&ndash; Ed Stetzer, Dean, Talbot School of Theology</em> </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<?php include __DIR__ . '/../assets/includes/testimonials-db.php'; ?>
+
 	<section class="section bd-btm-false" id="books">
         <div class="container col-md-11 col-xl-10">
             <h3 class="display-3 p-3 text-center text-uppercase">Other Titles by Dr. Wilson</h3>
             <div class="row mt-3">
-                <?php require_once __DIR__ . '/../assets/includes/more-titles.php'; ?>
+                <?php require_once __DIR__ . '/../assets/includes/more-titles-db.php'; ?>
             </div>
         </div>
     </section>

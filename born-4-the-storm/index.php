@@ -344,60 +344,13 @@
 	<!-- Author Section -->
 	<?php require_once __DIR__ . '/../assets/includes/author-section.php'; ?>
 
-	<section class="section testimonials team-1 bd-btm-true">
-		<div class="container col-md-11 col-xl-10">
-			<h3 class="display-3 px-3 mb-3 text-center text-uppercase">WHAT OTHERS ARE SAYING</h3>
-			<!--<div class="row align-items-center">-->
-			<div class="row">
-				<div class="col-lg-6 profile">
-					<div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									No matter your age or your relationship with this dynamic generation, this book is a
-									must-read.
-									&rdquo;</b> <br> <em>&ndash; Samuel Rodriguez, New Season Church</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									I highly commend the man and his message.
-									&rdquo;</b> <br> <em>&ndash; Bill Johnson, Bethel Church</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									This is a must-read for any leader desiring to lead effectively in the future.
-									&rdquo;</b> <br> <em>&ndash; Teófilo Hayashi, Zion Church</em> </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 profile">
-					<div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									Dr. Wilson has a passion, insight, and revelation that will empower and inspire
-									whoever reads this book.
-									&rdquo;</b> <br> <em>&ndash; Russell Evans, PlanetShakers Church</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									This book is for Gen Z and about Gen Z! Everyone needs its wisdom!
-									&rdquo;</b> <br> <em>&ndash; Andy Byrd, Youth With A Mission</em> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo;
-									Finally! The book about generational change we've been looking for is here.
-									&rdquo;</b> <br> <em>&ndash; Phil Cooke, Ph.D., Author and Media Consultant</em>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<?php include __DIR__ . '/../assets/includes/testimonials-db.php'; ?>
+
 	<section class="section bd-btm-false" id="books">
         <div class="container col-md-11 col-xl-10">
             <h3 class="display-3 p-3 text-center text-uppercase">Other Titles by Dr. Wilson</h3>
             <div class="row mt-3">
-                <?php require_once __DIR__ . '/../assets/includes/more-titles.php'; ?>
+                <?php require_once __DIR__ . '/../assets/includes/more-titles-db.php'; ?>
             </div>
         </div>
     </section>

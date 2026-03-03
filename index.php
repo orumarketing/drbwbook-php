@@ -296,53 +296,12 @@ $is_home_folder = true; // Set this to true if the page is in the home folder
         <div class="container col-md-11 col-xl-10">
             <h3 class="display-3 p-3 text-center text-uppercase"> Other titles by Dr. Wilson </h3>
             <div class="row mt-3">
-                <?php require_once __DIR__ . '/assets/includes/more-titles.php'; ?>
+		<?php require_once __DIR__ . '/assets/includes/more-titles-db.php'; ?>
             </div>
         </div>
     </section>
-    <section class="section testimonials team-1 bd-btm-true">
-		<div class="container col-md-11 col-xl-10">
-			<h3 class="display-3 px-3 mb-3 text-center text-uppercase">WHAT OTHERS ARE SAYING</h3>
-			<!--<div class="row align-items-center">-->
-			<div class="row">
-				<div class="col-lg-6 profile">
-					<div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo; <em>Empowered to Lead</em> should be required reading for every leader
-and anyone aspiring to lead in any sphere of life. &rdquo;</b><br>
-							<span>&ndash; Christine Caine; Founder, A21 &amp; Propel Women</span> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo; Dr. Wilson combines his life experiences and knowledge of the Spirit’s work in the life of a leader to give us a resource that will help
-leaders turn their vision into reality. &rdquo;</b> <br> 
-							<span>&ndash; Doug Clay; General Superintendent, Assemblies of God</span> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo; <em>Empowered to Lead</em> reignites your passion for living out your purpose by refueling your faith. &rdquo;</b><br> 
-							<span>&ndash; Chris Hodges; Chancellor, Highlands College, Founding Pastor, Church of the Highlands; Author of Pray First and Breathe Again</span> </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 profile">
-					<div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo; This encouraging book will undoubtedly serve as an invaluable resource for anyone who desires to be a leader not just of people, but of
-transformation, all through the empowering presence of the Holy Spirit. &rdquo;</b> <br>
-							<span>&ndash; Bill Johnson; Senior Leader, Bethel Church, Redding, CA; Author of Removing the Sting of Death and God Is Good</span> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo; Developed through decades of leadership experience, everyone, regardless of their role or responsibilities, will benefit from Dr. Wilson’s wisdom and perspective. &rdquo;</b> <br>
-							<span>&ndash; Samuel Rodriguez; Lead Pastor, New Season</span> </p>
-						</div>
-						<div class="testimony">
-							<p class="lead m-0 pb-3"> <b>&ldquo; What an edifying, powerful book. Every Spirit-filled leader should read it. &rdquo;</b> <br> 
-							<span>&ndash; Larry Stockstill, D.D.; Founder and Director, Pastors University</span> </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <?php include __DIR__ . '/assets/includes/testimonials-db.php'; ?>
+
     <section class="section sec-download text-bg-dark" data-astro-cid-ddbcycih>
 		<div class="container" data-astro-cid-ddbcycih>
 			<div class="row" data-astro-cid-ddbcycih>
