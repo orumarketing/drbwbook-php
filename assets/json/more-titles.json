@@ -1,0 +1,168 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "Empowered to Lead",
+            "image_path": "assets/img/empowered-to-lead-book-cover.jpg",
+            "price_tag": true,
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://shop.harpandswordmedia.com/products/empowered-to-lead?variant=47637651390702",
+                    "learn_more": false
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/empowered-to-lead",
+                    "learn_more": true
+                },
+                {
+                    "label": "Get A Free Chapter",
+                    "url": "https://keap.app/contact-us/6367487851531898",
+                    "learn_more": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "The Power of One",
+            "image_path": "assets/img/the-power-of-one.jpg",
+            "price_tag": true,
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://shop.harpandswordmedia.com/products/the-power-of-one",
+                    "learn_more": false
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/the-power-of-one",
+                    "learn_more": true
+                },
+                {
+                    "label": "Free Study Guide",
+                    "url": "/assets/pdfs/the-power-of-one-study-guide.pdf",
+                    "learn_more": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Generation Z Born 4 The Storm",
+            "image_path": "assets/img/new-images/small-genz-cover.jpg",
+            "price_tag": true,
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://shop.harpandswordmedia.com/products/generation-z",
+                    "learn_more": false
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/born-4-the-storm",
+                    "learn_more": true
+                },
+                {
+                    "label": "Get A Free Chapter",
+                    "url": "/assets/pdfs/GenZ_ChapterOne.pdf",
+                    "learn_more": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Father Cry",
+            "image_path": "assets/img/Father-Cry-Book-Cover-25.webp",
+            "price_tag": true,
+            "buttons": [
+                {
+                    "label": "Order Now",
+                    "url": "https://shop.harpandswordmedia.com/products/father-cry",
+                    "learn_more": false
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/father-cry",
+                    "learn_more": true
+                },
+                {
+                    "label": "Get A Free Chapter",
+                    "url": "https://keap.app/contact-us/681454306823001",
+                    "learn_more": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Fasting Forward",
+            "image_path": "assets/img/fasting-forward.webp",
+            "price_tag": true,
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://shop.harpandswordmedia.com/products/fasting-forward",
+                    "learn_more": false
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/fasting-forward",
+                    "learn_more": true
+                },
+                {
+                    "label": "Get A Free Chapter",
+                    "url": "https://keap.app/contact-us/384112612924908",
+                    "learn_more": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "As The Waters Cover The Sea",
+            "image_path": "assets/img/water-covers-sea.png",
+            "price_tag": false,
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://empowered21.com/product/as-the-waters-cover-the-sea/",
+                    "learn_more": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "title": "El Poder de Uno",
+            "image_path": "assets/img/new-images/el-poder-de-uno-thumbnail.png",
+            "price_tag": false,
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://shop.harpandswordmedia.com/products/el-poder-de-uno",
+                    "learn_more": false
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/el-poder-de-uno",
+                    "learn_more": true
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Books Bundle",
+            "image_path": "assets/img/Father-Cry-Book-Cover-25.webp",
+            "price_tag": false,
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://shop.harpandswordmedia.com/a/bundles/dr.-billy-wilsons-library-esr5",
+                    "learn_more": false
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/deals",
+                    "learn_more": true
+                }
+            ]
+        }
+    ]
+}

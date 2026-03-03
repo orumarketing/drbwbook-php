@@ -1,0 +1,87 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "The Power of One",
+            "image_path": "assets/img/the-power-of-one.jpg",
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://www.amazon.com/dp/1950971295/ref=mp_s_a_1_5?crid=3OP2VF5YZ9CMY&#38;keywords=the+power+of+one+billy+wilson&#38;qid=1688320146&#38;sprefix=the+power+of+one+billy+wilson%2Caps%2C158&#38;sr=8-5"
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/the-power-of-one"
+                },
+                {
+                    "label": "Free Study Guide",
+                    "url": "/assets/pdfs/the-power-of-one-study-guide.pdf"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Generation Z Born 4 The Storm",
+            "image_path": "assets/img/new-images/small-genz-cover.jpg",
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://www.amazon.com/dp/1637630271/ref=redir_mobile_desktop?_encoding=UTF8&#38;qid=1623256685&#38;ref_=tmm_hrd_swatch_0&#38;sr=8-1"
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/born-4-the-storm"
+                },
+                {
+                    "label": "Download a free chapter",
+                    "url": "/assets/pdfs/GenZ_ChapterOne.pdf"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Father Cry",
+            "image_path": "assets/img/Father-Cry-Book-Cover-25.webp",
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://www.amazon.com/Father-Cry-Healing-Heart-Hearts/dp/0800795385/ref=sr_1_1?crid=2XKAOA9TTX9B7&#38;dchild=1&#38;keywords=father+cry+billy+wilson&#38;qid=1630006147&#38;sprefix=Father+Cry+B%2Caps%2C252&#38;sr=8-1"
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/father-cry/"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "As The Waters Cover The Sea",
+            "image_path": "assets/img/water-covers-sea.png",
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://www.bkstr.com/oralrobertsstore/product/as-the-water-covers-the-sea-470660-1"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Fasting Forward",
+            "image_path": "assets/img/fasting-forward.webp",
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://www.amazon.com/Fasting-Forward-Advancing-Spiritual-Through-ebook/dp/B0CS8MDT8Q/ref=sr_1_1?crid=V83OTMLNA3JW&#38;dib=eyJ2IjoiMSJ9.HoDye8msEXEaPUx4RjMAs50VFn1ChevKc4syocL05UgvFybgRziMG6Z9l2SIoZ3SPukpmd15q53-s5DokaHrDA.A7Q0XpW2rwj5WIVZYT6CJsxx_HRVN8cJvEnzEVhm0OY&#38;dib_tag=se&#38;keywords=fasting+forward+billy+wilson&#38;qid=1705345434&#38;sprefix=%2Caps%2C116&#38;sr=8-1"
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/fasting-forward"
+                },
+                {
+                    "label": "Download a free chapter",
+                    "url": "https://keap.app/contact-us/384112612924908"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "author": {
+        "name": "Dr. Billy Wilson",
+        "description": "DR. BILLY WILSON, serves as president of Oral Roberts University, global chair of Empowered21, and chair of the Pentecostal World Fellowship. He is a global influencer and a dynamic speaker with undeniable passion and a profound ability to equip new generations of leaders. His weekly television program, World Impact with Dr. Billy Wilson, can be seen in over 150 nations in multiple languages. Wilson has authored several books, including Fasting Forward, Generation Z: Born for the Storm, As the Waters Cover the Sea with Vinson Synan, and The Power of One. Wilson and his wife, Lisa, reside in Tulsa, Oklahoma, where they enjoy time with their family.",
+        "image": "../assets/img/big-Bio-Photo-DrBilWil-rgb.jpg",
+        "link": {
+            "url": "https://oru.edu/about-oru/administration/office-of-the-president/",
+            "text": "Learn More About Dr. Wilson"
+        }
+    }
+}

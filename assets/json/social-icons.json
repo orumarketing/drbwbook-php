@@ -1,0 +1,32 @@
+{
+    "socialMedia": [
+        {
+            "faIconClass": "fa-brands fa-square-instagram",
+            "linkId": "instagram-icon",
+            "url": "https://www.instagram.com/drwilsonbilly/",
+            "displayName": "Instagram",
+            "hoverTitle": "Follow us"
+        },
+        {
+            "faIconClass": "fa-brands fa-x-twitter",
+            "linkId": "twitter-icon",
+            "url": "https://twitter.com/WilsonBilly",
+            "displayName": "Twitter",
+            "hoverTitle": "Follow us"
+        },
+        {
+            "faIconClass": "fa-brands fa-facebook-f",
+            "linkId": "facebook-icon",
+            "url": "https://www.facebook.com/OralRobertsUniversity/",
+            "displayName": "Facebook",
+            "hoverTitle": "Like us"
+        },
+        {
+            "faIconClass": "fa-brands fa-youtube",
+            "linkId": "youtube-icon",
+            "url": "https://www.youtube.com/channel/UC1Zlj1BS7cwpnfB55-zbE1g",
+            "displayName": "Youtube",
+            "hoverTitle": "Subscribe"
+        }
+    ]
+}
