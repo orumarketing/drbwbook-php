@@ -338,7 +338,7 @@
 	</section>
 	
 	<!-- Author Section -->
-	<?php require_once __DIR__ . '/../assets/includes/author-section-25.php'; ?>
+	<?php require_once __DIR__ . '/../assets/includes/author-section-emp-to-lead.php'; ?>
 	
 	<?php include __DIR__ . '/../assets/includes/testimonials-db.php'; ?>
 
