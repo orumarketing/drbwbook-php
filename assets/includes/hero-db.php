@@ -14,6 +14,14 @@ $hero_img = $hero_book ? $base_url . ltrim($hero_book['hero_image'], '/') : $her
 $hero_buy_label = $hero_fallback_buy_label ?? 'Buy Now';
 $hero_free_label = $hero_fallback_free_label ?? 'Get A Free Chapter';
 $hero_show_discount = $hero_show_discount ?? true;
+
+// site-relative links (e.g. "assets/pdfs/...") need the base url prepended
+$hero_link = function ($url) use ($base_url) {
+    if (!$url || preg_match('#^(https?://|/|\#)#i', $url)) return $url;
+    return $base_url . ltrim($url, '/');
+};
+$hero_buy_link = $hero_link($hero_buy_link);
+$hero_free_link = $hero_link($hero_free_link);
 ?>
 
 <div class="page-header page-header-small header-filter">
@@ -27,11 +35,10 @@ $hero_show_discount = $hero_show_discount ?? true;
                     <?php if ($hero_show_discount): ?>
                     <img class="discount-tag" src="<?php echo $base_url; ?>assets/img/new-images/discount-tag.png" alt="50% off">
                     <?php endif; ?>
-                    <img class="pop-out-book mr-lg-5" src="<?php echo $hero_img ?? $hero_book_img; ?>"
-		</div>	
+                    <img class="pop-out-book mr-lg-5" src="<?php echo $hero_img ?? $hero_book_img; ?>" alt="<?php echo htmlspecialchars($hero_book_img_alt ?? $hero_title . ' book'); ?>">
                 </div>
                 <div class="col-lg-5 hero">
-                    <h1 class="display-3 dark-text order-lg-0"><?php echo strtoupper(htmlspecialchars($hero_title)); ?></h1>
+                    <h1 class="display-3 dark-text order-lg-0"><?php echo htmlspecialchars($hero_title); ?></h1>
                     <p class="lead pb-0 dark-text order-lg-1"><?php echo $hero_description; ?></p>
                     <div class="my-5">
                         <div class="d-none d-lg-block">

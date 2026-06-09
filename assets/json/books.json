@@ -1,0 +1,51 @@
+{
+    "empowered-to-lead": {
+        "title": "EMPOWERED TO LEAD",
+        "description": "<em>Empowered to Lead: Becoming a Leader Who Impacts the World</em> by Dr. Billy Wilson equips you to lead with integrity, courage, and vision—impacting the world through faith, wisdom, and Spirit-empowered leadership.",
+        "buy_link": "https://shop.harpandswordmedia.com/products/empowered-to-lead?variant=47637651390702",
+        "free_chapter_link": "https://keap.app/contact-us/6367487851531898",
+        "hero_image": "assets/img/new-images/empowered-to-lead-cover.png"
+    },
+    "the-power-of-one": {
+        "title": "The Power Of One",
+        "description": "How can eight billion people have an authentic encounter with Jesus Christ?<br><strong><em>The Power of One</em></strong> provides a clear and attainable path toward the renewal of the Great Commission.",
+        "buy_link": "https://shop.harpandswordmedia.com/products/the-power-of-one",
+        "free_chapter_link": "assets/pdfs/the-power-of-one-study-guide.pdf",
+        "hero_image": "assets/img/new-images/power1cover.png"
+    },
+    "born-4-the-storm": {
+        "title": "GENERATION Z BORN FOR THE STORM",
+        "description": "From the halls of middle schools to boardrooms of the most innovative companies in the world, Generation Z is coming of age at one of the most unique times in human history.",
+        "buy_link": "https://shop.harpandswordmedia.com/products/generation-z",
+        "free_chapter_link": "assets/pdfs/GenZ_ChapterOne.pdf",
+        "hero_image": "assets/img/Gen-Z-Book-Cutout-c.png"
+    },
+    "father-cry": {
+        "title": "Father Cry",
+        "description": "<em>Father Cry</em> addresses the generational longing for spiritual parents and the deep desire to experience the love of our heavenly Father.",
+        "buy_link": "https://shop.harpandswordmedia.com/products/father-cry",
+        "free_chapter_link": "https://keap.app/contact-us/681454306823001",
+        "hero_image": "assets/img/father-cry-no-background.webp"
+    },
+    "fasting-forward": {
+        "title": "Fasting Forward",
+        "description": "<em>In Fasting Forward,</em> Dr. Billy Wilson shares the importance of fasting and how Christ-followers can advance their spiritual lives through practicing this ancient discipline.",
+        "buy_link": "https://shop.harpandswordmedia.com/products/fasting-forward",
+        "free_chapter_link": "https://keap.app/contact-us/384112612924908",
+        "hero_image": "assets/img/new-images/fasting-forward-cover-02.png"
+    },
+    "el-poder-de-uno": {
+        "title": "El Poder de Uno",
+        "description": "Que cada persona en la Tierra tenga un encuentro auténtico con JESUCRISTO a través del poder y la presencia del Espíritu Santo . . . antes del Pentecostés 2033.",
+        "buy_link": "https://shop.harpandswordmedia.com/products/el-poder-de-uno",
+        "free_chapter_link": "",
+        "hero_image": "assets/img/new-images/el-poder-de-uno-cover.png"
+    },
+    "ayunar-para-avanzar": {
+        "title": "Ayunar Para Avanzar",
+        "description": "En <em>Ayunar para avanzar,</em> el Dr. Billy Wilson comparte la importancia del ayuno y cómo los seguidores de Cristo pueden crecer en sus vidas espirituales a través de la práctica de esta antigua disciplina.",
+        "buy_link": "https://shop.harpandswordmedia.com/products/ayunar-para-avanzar",
+        "free_chapter_link": "",
+        "hero_image": "assets/img/new-images/ayunar-para-avanzar-cover.jpg"
+    }
+}

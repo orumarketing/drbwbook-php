@@ -20,7 +20,7 @@ $is_home_folder = true; // Set this to true if the page is in the home folder
         integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
     <link href="https://kit.fontawesome.com/029e596eee.css" rel="stylesheet" crossorigin="anonymous">
     <link href="./assets/css/nucleo-svg.css" rel="stylesheet">
-    <link href="./assets/css/custom-local.css?v=1.0.0" rel="stylesheet">
+    <link href="./assets/css/custom-local.css?v=1.0.1" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KLYSQES10"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

@@ -19,7 +19,7 @@ $this_page_book_title = "Book Deals"; // Put the title of whatever is in the her
     <link href="<?php echo $base_url; ?>assets/css/nucleo-icons.css" rel="stylesheet">
     <link href="<?php echo $base_url; ?>assets/css/nucleo-svg.css" rel="stylesheet">
     <link href="<?php echo $base_url; ?>assets/css/argon-design-system.css?v=1.0.3" rel="stylesheet">
-    <link href="<?php echo $base_url; ?>assets/css/custom-local.css?v=1.0.0" rel="stylesheet">
+    <link href="<?php echo $base_url; ?>assets/css/custom-local.css?v=1.0.1" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KLYSQES10"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

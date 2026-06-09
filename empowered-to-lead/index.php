@@ -29,7 +29,7 @@
 	<!-- Font Awesome Icons --><!-- <link href="<?php echo $base_url; ?>assets/css/font-awesome.css" rel="stylesheet" /> -->
 	<link href="assets/css/nucleo-svg.css" rel="stylesheet"><!-- CSS Files -->
 	<link href="<?php echo $base_url; ?>assets/css/argon-design-system.css?v=1.0.3" rel="stylesheet"><!-- Custom CSS Files -->
-	<link href="<?php echo $base_url; ?>assets/css/custom-local.css?v=1.0.0" rel="stylesheet">
+	<link href="<?php echo $base_url; ?>assets/css/custom-local.css?v=1.0.1" rel="stylesheet">
 	<!-- <link href="/Users/johnsanders/Documents/VS Code/born4thestorm/css/custom-local.css" rel="stylesheet" /> --><!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KLYSQES10"></script>
 	<script>

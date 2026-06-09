@@ -5,10 +5,11 @@ $testimonials = [];
 
 if (isset($this_page_book_title)) {
     $page_slug = basename(dirname($_SERVER['SCRIPT_FILENAME']));
-    if ($page_slug === basename($_SERVER['DOCUMENT_ROOT']) || $page_slug === 'drbillyw') {
-        $page_slug = 'empowered-to-lead';
-    }
     $book = cms_get_book($page_slug);
+    if (!$book) {
+        // pages whose folder isn't a book slug (e.g. the site root) match by title
+        $book = cms_get_book_by_title($this_page_book_title);
+    }
     if ($book) {
         $testimonials = cms_get_testimonials($book['id']);
     }
@@ -21,7 +22,7 @@ if (!empty($testimonials)):
 ?>
 <section class="section testimonials team-1 bd-btm-true">
     <div class="container col-md-11 col-xl-10">
-        <h3 class="display-3 px-3 mb-3 text-center text-uppercase">WHAT OTHERS ARE SAYING</h3>
+        <h3 class="display-3 px-3 mb-3 text-center text-uppercase"><?php echo htmlspecialchars($testimonials_heading ?? 'WHAT OTHERS ARE SAYING'); ?></h3>
         <div class="row">
             <div class="col-lg-6 profile">
                 <div>
@@ -29,7 +30,7 @@ if (!empty($testimonials)):
                     <div class="testimony">
                         <p class="lead m-0 pb-3">
                             <b>&ldquo; <?php echo htmlspecialchars($t['quote']); ?> &rdquo;</b><br>
-                            <em>&ndash; <?php echo htmlspecialchars($t['author']);
+                            <em><?php echo htmlspecialchars($t['author']);
                                 if ($t['author_title']) echo '; ' . htmlspecialchars($t['author_title']);
                             ?></em>
                         </p>
@@ -43,7 +44,7 @@ if (!empty($testimonials)):
                     <div class="testimony">
                         <p class="lead m-0 pb-3">
                             <b>&ldquo; <?php echo htmlspecialchars($t['quote']); ?> &rdquo;</b><br>
-                            <em>&ndash; <?php echo htmlspecialchars($t['author']);
+                            <em><?php echo htmlspecialchars($t['author']);
                                 if ($t['author_title']) echo '; ' . htmlspecialchars($t['author_title']);
                             ?></em>
                         </p>

@@ -2,6 +2,18 @@
     $jsonData = file_get_contents(__DIR__ . '/../json/more-titles.json');
     // $books = json_decode($jsonData, true);
     $books = json_decode($jsonData, true)['books'];
+
+    // Group books into nav dropdowns by their "menu" value in more-titles.json.
+    // A menu with no books is hidden automatically.
+    $nav_menus = [
+        'default' => ['label' => 'Titles', 'books' => []],
+        'spanish' => ['label' => 'Títulos', 'books' => []],
+    ];
+    foreach ($books as $book) {
+        $group = $book['menu'] ?? 'default';
+        if (!isset($nav_menus[$group])) $group = 'default';
+        $nav_menus[$group]['books'][] = $book;
+    }
 ?>
 
 <!-- From Nav PHP -->
@@ -26,30 +38,31 @@
                     <div class="nav-item order-lg-last">
                         <a class="nav-link" href="<?php echo $is_home_folder ? './father-cry/#author' : '#author'; ?>">About Dr. Wilson</a>
                     </div>
+                    <?php foreach ($nav_menus as $nav_menu): if (empty($nav_menu['books'])) continue; ?>
                     <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">More Titles</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><?php echo htmlspecialchars($nav_menu['label']); ?></a>
                         <div class="dropdown-menu">
                             <div class="d-flex flex-wrap">
                                 <?php
-                                foreach ($books as $book) {
+                                foreach ($nav_menu['books'] as $book) {
                                     // Determine the correct image path based on $is_home_folder
-                                    $imagePath = $is_home_folder 
-                                    ? $base_url . htmlspecialchars($book['image_path']) 
+                                    $imagePath = $is_home_folder
+                                    ? $base_url . htmlspecialchars($book['image_path'])
                                     : '../' . ltrim(htmlspecialchars($book['image_path']), '/');
 
                                     // Find the URL where learn_more is true
                                     $learnMoreUrl = '';
                                     foreach ($book['buttons'] as $button) {
                                         if ($button['learn_more']) {
-                                            $learnMoreUrl = $is_home_folder 
-                                            ? $base_url . ltrim(htmlspecialchars($button['url']), '/') 
+                                            $learnMoreUrl = $is_home_folder
+                                            ? $base_url . ltrim(htmlspecialchars($button['url']), '/')
                                             : '../' . ltrim(htmlspecialchars($button['url']), '/');
                                             break;
                                         }else {
                                             $learnMoreUrl = htmlspecialchars($button['url']);
                                         }
                                     }
-                                    
+
                                     echo '<li class="book-item">';
                                     echo '<a class="dropdown-item d-flex align-items-center" href="' . $learnMoreUrl . '">';
                                     echo '<img width="50px;" class="d-none d-md-block" src="' . $imagePath . '" alt="">';
@@ -62,6 +75,7 @@
                         </div>
                         <!-- dropdown-menu  -->
                     </div>
+                    <?php endforeach; ?>
                 </div>
                 <!-- navbar-nav -->
             </div>

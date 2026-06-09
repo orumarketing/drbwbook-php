@@ -3,6 +3,7 @@
         {
             "id": 1,
             "title": "Empowered to Lead",
+            "menu": "default",
             "image_path": "assets/img/empowered-to-lead-book-cover.jpg",
             "price_tag": true,
             "buttons": [
@@ -26,6 +27,7 @@
         {
             "id": 2,
             "title": "The Power of One",
+            "menu": "default",
             "image_path": "assets/img/the-power-of-one.jpg",
             "price_tag": true,
             "buttons": [
@@ -36,7 +38,7 @@
                 },
                 {
                     "label": "Learn More",
-                    "url": "/the-power-of-one",
+                    "url": "/the-power-of-one/",
                     "learn_more": true
                 },
                 {
@@ -49,6 +51,7 @@
         {
             "id": 3,
             "title": "Generation Z Born 4 The Storm",
+            "menu": "default",
             "image_path": "assets/img/new-images/small-genz-cover.jpg",
             "price_tag": true,
             "buttons": [
@@ -72,6 +75,7 @@
         {
             "id": 4,
             "title": "Father Cry",
+            "menu": "default",
             "image_path": "assets/img/Father-Cry-Book-Cover-25.webp",
             "price_tag": true,
             "buttons": [
@@ -95,6 +99,7 @@
         {
             "id": 5,
             "title": "Fasting Forward",
+            "menu": "default",
             "image_path": "assets/img/fasting-forward.webp",
             "price_tag": true,
             "buttons": [
@@ -118,6 +123,7 @@
         {
             "id": 6,
             "title": "As The Waters Cover The Sea",
+            "menu": "default",
             "image_path": "assets/img/water-covers-sea.png",
             "price_tag": false,
             "buttons": [
@@ -131,6 +137,7 @@
         {
             "id": 7,
             "title": "El Poder de Uno",
+            "menu": "spanish",
             "image_path": "assets/img/new-images/el-poder-de-uno-thumbnail.png",
             "price_tag": false,
             "buttons": [
@@ -147,8 +154,28 @@
             ]
         },
         {
+            "id": 8,
+            "title": "Ayunar Para Avanzar",
+            "menu": "spanish",
+            "image_path": "assets/img/new-images/ayunar-para-avanzar-cover.jpg",
+            "price_tag": false,
+            "buttons": [
+                {
+                    "label": "Buy Now",
+                    "url": "https://shop.harpandswordmedia.com/products/ayunar-para-avanzar",
+                    "learn_more": false
+                },
+                {
+                    "label": "Learn More",
+                    "url": "/ayunar-para-avanzar",
+                    "learn_more": true
+                }
+            ]
+        },
+        {
             "id": 7,
             "title": "Books Bundle",
+            "menu": "default",
             "image_path": "assets/img/Father-Cry-Book-Cover-25.webp",
             "price_tag": false,
             "buttons": [

@@ -1,71 +1,48 @@
 <?php
-$cms_db = null;
+// JSON-backed content store. Book hero content and testimonials live in
+// assets/json/books.json and assets/json/testimonials.json so the whole
+// site is editable through the repo - no database required.
 
-function cms_connect() {
-    global $cms_db;
-    if ($cms_db) return $cms_db;
-    try {
-        $cms_db = new PDO(
-            'pgsql:host=100.116.132.111;port=5432;dbname=ai_data',
-            'postgres', 'db#sunny2day&cool2nightJames',
-            [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, PDO::ATTR_TIMEOUT => 3]
-        );
-        return $cms_db;
-    } catch (PDOException $e) {
-        error_log("CMS DB connection failed: " . $e->getMessage());
-        return null;
+function cms_load_json($filename) {
+    static $cache = [];
+    if (!array_key_exists($filename, $cache)) {
+        $raw = @file_get_contents(__DIR__ . '/../json/' . $filename);
+        $data = $raw ? json_decode($raw, true) : null;
+        if ($data === null && $raw !== false) {
+            error_log("CMS JSON parse error in $filename: " . json_last_error_msg());
+        }
+        $cache[$filename] = is_array($data) ? $data : [];
     }
+    return $cache[$filename];
 }
 
 function cms_get_book($slug) {
-    $db = cms_connect();
-    if (!$db) return null;
-    try {
-        $stmt = $db->prepare("SELECT b.*, p.slug, p.status, p.meta_description FROM cms_books b JOIN cms_pages p ON b.page_id = p.id WHERE p.slug = :slug AND p.status = 'published' LIMIT 1");
-        $stmt->execute(['slug' => $slug]);
-        return $stmt->fetch();
-    } catch (PDOException $e) {
-        error_log("CMS get_book error: " . $e->getMessage());
-        return null;
+    $books = cms_load_json('books.json');
+    if (!isset($books[$slug])) return null;
+    $book = $books[$slug];
+    $book['id'] = $slug;
+    $book['slug'] = $slug;
+    return $book;
+}
+
+function cms_get_book_by_title($title) {
+    foreach (cms_load_json('books.json') as $slug => $book) {
+        if (mb_strtolower($book['title'], 'UTF-8') === mb_strtolower($title, 'UTF-8')) {
+            return cms_get_book($slug);
+        }
     }
+    return null;
 }
 
 function cms_get_testimonials($book_id) {
-    $db = cms_connect();
-    if (!$db) return [];
-    try {
-        $stmt = $db->prepare("SELECT author, author_title, quote, display_order FROM cms_testimonials WHERE book_id = :book_id ORDER BY display_order ASC, id ASC");
-        $stmt->execute(['book_id' => $book_id]);
-        return $stmt->fetchAll();
-    } catch (PDOException $e) {
-        error_log("CMS get_testimonials error: " . $e->getMessage());
-        return [];
-    }
+    $all = cms_load_json('testimonials.json');
+    return $all[$book_id] ?? [];
 }
 
+// The "Other Titles" grids render from more-titles.json: returning an empty
+// list sends more-titles-db.php down its JSON fallback (more-titles.php),
+// which preserves the per-book button labels and price tags.
 function cms_get_all_books() {
-    $db = cms_connect();
-    if (!$db) return [];
-    try {
-        $stmt = $db->query("SELECT b.*, p.slug, p.status FROM cms_books b JOIN cms_pages p ON b.page_id = p.id WHERE p.status = 'published' ORDER BY b.display_order ASC");
-        return $stmt->fetchAll();
-    } catch (PDOException $e) {
-        error_log("CMS get_all_books error: " . $e->getMessage());
-        return [];
-    }
-}
-
-function cms_get_content($page_slug, $section_name = 'main') {
-    $db = cms_connect();
-    if (!$db) return null;
-    try {
-        $stmt = $db->prepare("SELECT content FROM cms_content_blocks cb JOIN cms_pages p ON cb.page_id = p.id WHERE p.slug = :slug AND cb.section_name = :section LIMIT 1");
-        $stmt->execute(['slug' => $page_slug, 'section' => $section_name]);
-        $row = $stmt->fetch();
-        return $row ? $row['content'] : null;
-    } catch (PDOException $e) {
-        error_log("CMS get_content error: " . $e->getMessage());
-        return null;
-    }
+    return [];
 }
 ?>

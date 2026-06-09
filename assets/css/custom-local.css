@@ -527,10 +527,17 @@ a.btn-icon-only {
       width: 50%;
   }
 }
-/* mobile */
+/* mobile: dropdowns act as accordions inside the hamburger menu
+   (visibility is toggled by Bootstrap via .show; don't force display) */
 @media (max-width: 991.98px) {
-  .dropdown-menu {
-      display: block;
+  .navbar-nav .dropdown-menu {
+      position: static;
+      float: none;
+      width: 100%;
+      box-shadow: none;
+  }
+  .book-item {
+      width: 50%;
   }
 }
 
