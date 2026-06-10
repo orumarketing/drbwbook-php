@@ -4,6 +4,7 @@
 <?php
 	include_once __DIR__ . '/../config.php';
 	$this_page_book_title = 'The Power of One';
+	$this_page_book_id = 'the-power-of-one';
 	$is_the_home_page = true;
 	$hero_slug = 'the-power-of-one';
 	$hero_bg_style = "background: linear-gradient(45deg, #1e0d0d00, #6c6c6c69), url(" . $base_url . "assets/img/new-images/PoOBackground2-min.jpg); background-size: cover; background-repeat: no-repeat;";

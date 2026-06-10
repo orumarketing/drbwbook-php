@@ -3,6 +3,7 @@
 <?php 
     include_once __DIR__ . '/../config.php';
     $this_page_book_title = "Fasting Forward";
+	$this_page_book_id = 'fasting-forward';
 	$hero_slug = 'fasting-forward';
 	$hero_bg_style = "background: linear-gradient(45deg, #00000020, #ffffff00), url(" . $base_url . "assets/img/new-images/fasting-forward-background.jpg); background-size: cover; background-repeat: no-repeat;";
 	$hero_book_img = $base_url . 'assets/img/new-images/fasting-forward-cover-02.png';

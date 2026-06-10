@@ -4,13 +4,14 @@
 <?php
 	include_once __DIR__ . '/../config.php';
 	$this_page_book_title = 'El Poder de Uno';
+	$this_page_book_id = 'el-poder-de-uno';
 	$is_the_home_page = true;
 	$hero_slug = 'el-poder-de-uno';
 	$hero_bg_style = "background: linear-gradient(45deg, #1e0d0d00, #6c6c6c69), url(" . $base_url . "assets/img/new-images/PoOBackground2-min.jpg); background-size: cover; background-repeat: no-repeat;";
 	$hero_book_img = $base_url . 'assets/img/new-images/el-poder-de-uno-cover.png';
 	$hero_book_img_alt = 'El Poder de Uno book';
 	$hero_show_discount = false;
-	$hero_fallback_buy_label = 'Adquirir ahora';
+	$hero_fallback_buy_label = 'Comprar Ahora';
 	$testimonials_heading = 'LO QUE OTROS ESTÁN DICIENDO';
 ?>
 
@@ -351,11 +352,11 @@
 				</div>
 				<div class="col-12 col-md-6 d-flex flex-column justify-content-center" data-astro-cid-ddbcycih>
 					<p class="text-center text-light">
-						Order <em>El Poder de Uno</em> Today!
+						¡Adquiere <em>El Poder de Uno</em> hoy!
 					</p>
 					<p class="text-center buttons-section"> <a
 							href="https://shop.harpandswordmedia.com/products/el-poder-de-uno"
-							class="btn btn-secondary mt-2" target="_blank" data-astro-cid-so3q4bn5> Adquirir ahora </a> </p>
+							class="btn btn-secondary mt-2" target="_blank" data-astro-cid-so3q4bn5> Comprar Ahora </a> </p>
 				</div>
 			</div>
 		</div>

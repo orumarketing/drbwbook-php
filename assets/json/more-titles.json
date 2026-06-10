@@ -1,7 +1,6 @@
 {
-    "books": [
-        {
-            "id": 1,
+    "books": {
+        "empowered-to-lead": {
             "title": "Empowered to Lead",
             "menu": "default",
             "image_path": "assets/img/empowered-to-lead-book-cover.jpg",
@@ -24,10 +23,10 @@
                 }
             ]
         },
-        {
-            "id": 2,
+        "the-power-of-one": {
             "title": "The Power of One",
             "menu": "default",
+            "alt_languages": ["el-poder-de-uno"],
             "image_path": "assets/img/the-power-of-one.jpg",
             "price_tag": true,
             "buttons": [
@@ -48,8 +47,7 @@
                 }
             ]
         },
-        {
-            "id": 3,
+        "born-4-the-storm": {
             "title": "Generation Z Born 4 The Storm",
             "menu": "default",
             "image_path": "assets/img/new-images/small-genz-cover.jpg",
@@ -72,8 +70,7 @@
                 }
             ]
         },
-        {
-            "id": 4,
+        "father-cry": {
             "title": "Father Cry",
             "menu": "default",
             "image_path": "assets/img/Father-Cry-Book-Cover-25.webp",
@@ -96,10 +93,10 @@
                 }
             ]
         },
-        {
-            "id": 5,
+        "fasting-forward": {
             "title": "Fasting Forward",
             "menu": "default",
+            "alt_languages": ["ayunar-para-avanzar"],
             "image_path": "assets/img/fasting-forward.webp",
             "price_tag": true,
             "buttons": [
@@ -120,8 +117,7 @@
                 }
             ]
         },
-        {
-            "id": 6,
+        "as-the-waters-cover-the-sea": {
             "title": "As The Waters Cover The Sea",
             "menu": "default",
             "image_path": "assets/img/water-covers-sea.png",
@@ -134,46 +130,45 @@
                 }
             ]
         },
-        {
-            "id": 7,
+        "el-poder-de-uno": {
             "title": "El Poder de Uno",
             "menu": "spanish",
+            "alt_languages": ["the-power-of-one"],
             "image_path": "assets/img/new-images/el-poder-de-uno-thumbnail.png",
             "price_tag": false,
             "buttons": [
                 {
-                    "label": "Buy Now",
+                    "label": "Comprar Ahora",
                     "url": "https://shop.harpandswordmedia.com/products/el-poder-de-uno",
                     "learn_more": false
                 },
                 {
-                    "label": "Learn More",
+                    "label": "Conozca Más",
                     "url": "/el-poder-de-uno",
                     "learn_more": true
                 }
             ]
         },
-        {
-            "id": 8,
+        "ayunar-para-avanzar": {
             "title": "Ayunar Para Avanzar",
             "menu": "spanish",
+            "alt_languages": ["fasting-forward"],
             "image_path": "assets/img/new-images/ayunar-para-avanzar-cover.jpg",
             "price_tag": false,
             "buttons": [
                 {
-                    "label": "Buy Now",
+                    "label": "Comprar Ahora",
                     "url": "https://shop.harpandswordmedia.com/products/ayunar-para-avanzar",
                     "learn_more": false
                 },
                 {
-                    "label": "Learn More",
+                    "label": "Conozca Más",
                     "url": "/ayunar-para-avanzar",
                     "learn_more": true
                 }
             ]
         },
-        {
-            "id": 7,
+        "books-bundle": {
             "title": "Books Bundle",
             "menu": "default",
             "image_path": "assets/img/Father-Cry-Book-Cover-25.webp",
@@ -191,5 +186,5 @@
                 }
             ]
         }
-    ]
+    }
 }

@@ -4,12 +4,13 @@
 <?php
 	include_once __DIR__ . '/../config.php';
 	$this_page_book_title = 'Ayunar Para Avanzar';
+	$this_page_book_id = 'ayunar-para-avanzar';
 	$hero_slug = 'ayunar-para-avanzar';
 	$hero_bg_style = "background: linear-gradient(45deg, #00000020, #ffffff00), url(" . $base_url . "assets/img/new-images/fasting-forward-background.jpg); background-size: cover; background-repeat: no-repeat;";
 	$hero_book_img = $base_url . 'assets/img/new-images/ayunar-para-avanzar-cover.jpg';
 	$hero_book_img_alt = 'Ayunar Para Avanzar book';
 	$hero_show_discount = false;
-	$hero_fallback_buy_label = 'Comprar ahora';
+	$hero_fallback_buy_label = 'Comprar Ahora';
 	$testimonials_heading = 'LO QUE OTROS DICEN';
 ?>
 
@@ -356,7 +357,7 @@
 					</p>
 					<p class="text-center buttons-section"> <a
 							href="https://shop.harpandswordmedia.com/products/ayunar-para-avanzar"
-							class="btn btn-secondary mt-2" target="_blank" data-astro-cid-so3q4bn5> Comprar ahora </a> </p>
+							class="btn btn-secondary mt-2" target="_blank" data-astro-cid-so3q4bn5> Comprar Ahora </a> </p>
 				</div>
 			</div>
 		</div>

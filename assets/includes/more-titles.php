@@ -3,6 +3,20 @@
 $jsonData = file_get_contents(__DIR__ . '/../json/more-titles.json');
 $books = json_decode($jsonData, true)['books'];
 
+// When the current page's book lists other-language editions ("alt_languages"),
+// move those to the front of the grid (array order = display order).
+if (isset($this_page_book_id, $books[$this_page_book_id]['alt_languages'])) {
+    $altBooks = [];
+    foreach ($books[$this_page_book_id]['alt_languages'] as $alt_id) {
+        if (isset($books[$alt_id])) {
+            $altBooks[$alt_id] = $books[$alt_id];
+        } else {
+            error_log("more-titles.json: '{$this_page_book_id}' lists unknown alt language '{$alt_id}'");
+        }
+    }
+    $books = $altBooks + $books;
+}
+
 // Filter out the current page's book and limit to 4 books
 $filteredBooks = array_filter($books, function ($book) use ($this_page_book_title) {
     return $book['title'] !== $this_page_book_title;
