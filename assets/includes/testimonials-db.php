@@ -29,7 +29,7 @@ if (!empty($testimonials)):
                     <?php foreach ($left_col as $t): ?>
                     <div class="testimony">
                         <p class="lead m-0 pb-3">
-                            <b>&ldquo; <?php echo htmlspecialchars($t['quote']); ?> &rdquo;</b><br>
+                            <b>&ldquo; <?php echo cms_italicize_title($t['quote'], $book['title'] ?? ''); ?> &rdquo;</b><br>
                             <em><?php echo htmlspecialchars($t['author']);
                                 if ($t['author_title']) echo '; ' . htmlspecialchars($t['author_title']);
                             ?></em>
@@ -43,7 +43,7 @@ if (!empty($testimonials)):
                     <?php foreach ($right_col as $t): ?>
                     <div class="testimony">
                         <p class="lead m-0 pb-3">
-                            <b>&ldquo; <?php echo htmlspecialchars($t['quote']); ?> &rdquo;</b><br>
+                            <b>&ldquo; <?php echo cms_italicize_title($t['quote'], $book['title'] ?? ''); ?> &rdquo;</b><br>
                             <em><?php echo htmlspecialchars($t['author']);
                                 if ($t['author_title']) echo '; ' . htmlspecialchars($t['author_title']);
                             ?></em>

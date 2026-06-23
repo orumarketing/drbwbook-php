@@ -39,6 +39,19 @@ function cms_get_testimonials($book_id) {
     return $all[$book_id] ?? [];
 }
 
+// Escape a testimonial quote for output and italicize any mention of the book
+// title within it (case-insensitive), matching how the original static pages
+// rendered the title in <em>.
+function cms_italicize_title($quote, $title) {
+    $escaped = htmlspecialchars($quote);
+    $title = trim((string) $title);
+    if ($title === '') {
+        return $escaped;
+    }
+    $needle = htmlspecialchars($title);
+    return preg_replace('/' . preg_quote($needle, '/') . '/iu', '<em>$0</em>', $escaped);
+}
+
 // The "Other Titles" grids render from more-titles.json: returning an empty
 // list sends more-titles-db.php down its JSON fallback (more-titles.php),
 // which preserves the per-book button labels and price tags.
