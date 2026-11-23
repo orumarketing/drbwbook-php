@@ -351,7 +351,7 @@ $is_home_folder = true; // Set this to true if the page is in the home folder
                 </div>
                 <div class="col-12 col-lg-5">
                     <a href="https://shop.harpandswordmedia.com/a/bundles/dr.-billy-wilsons-library-esr5" target="_blank" rel="noopener noreferrer">
-                    <img class="img-fluid" src="<?php echo $base_url; ?>assets/img/new-images/bundle-black-friday.png" alt="Books Bundle"></a>
+                    <img class="img-fluid" src="<?php echo $base_url; ?>assets/img/new-images/bundle-hero.png" alt="Books Bundle"></a>
                 </div>
             </div>
             <div class="row">
