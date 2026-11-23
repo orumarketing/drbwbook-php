@@ -570,3 +570,23 @@ a.btn-icon-only {
 .black-friday .discount-tag {
     display: block;
 }
+
+/* Nav dropdown thumbnails: the hero's 50% off tag, its height a fixed share of the
+   book image height (hero ratio 165px/600px = 27.5%, bumped 8 points to 35.5%).
+   The tag <img> is added by black-friday.js only during the sale window. */
+.nav-book-thumb {
+    position: relative;
+    flex-shrink: 0;
+}
+.nav-discount-tag {
+    display: none;
+    position: absolute;
+    top: -10%;
+    right: -18%;
+    height: 35.5%;
+    width: auto;
+    z-index: 2;
+}
+.black-friday .nav-discount-tag {
+    display: block;
+}

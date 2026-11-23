@@ -9,7 +9,7 @@
 	$hero_bg_style = "background: linear-gradient(45deg, #00000020, #ffffff00), url(" . $base_url . "assets/img/new-images/fasting-forward-background.jpg); background-size: cover; background-repeat: no-repeat;";
 	$hero_book_img = $base_url . 'assets/img/new-images/ayunar-para-avanzar-hero.webp';
 	$hero_book_img_alt = 'Ayunar Para Avanzar book';
-	$hero_show_discount = false;
+	$hero_show_discount = true;
 	$hero_fallback_buy_label = 'Comprar Ahora';
 	$testimonials_heading = 'LO QUE OTROS DICEN';
 ?>

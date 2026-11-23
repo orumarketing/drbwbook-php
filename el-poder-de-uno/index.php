@@ -10,7 +10,7 @@
 	$hero_bg_style = "background: linear-gradient(45deg, #1e0d0d00, #6c6c6c69), url(" . $base_url . "assets/img/new-images/PoOBackground2-min.jpg); background-size: cover; background-repeat: no-repeat;";
 	$hero_book_img = $base_url . 'assets/img/new-images/el-poder-de-uno-cover.png';
 	$hero_book_img_alt = 'El Poder de Uno book';
-	$hero_show_discount = false;
+	$hero_show_discount = true;
 	$hero_fallback_buy_label = 'Comprar Ahora';
 	$testimonials_heading = 'LO QUE OTROS ESTÁN DICIENDO';
 ?>

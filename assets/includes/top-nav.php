@@ -65,7 +65,11 @@
 
                                     echo '<li class="book-item">';
                                     echo '<a class="dropdown-item d-flex align-items-center" href="' . $learnMoreUrl . '">';
-                                    echo '<img width="50px;" class="d-none d-md-block" src="' . $imagePath . '" alt="">';
+                                    // .nav-book-thumb: black-friday.js adds the 50% off tag in here
+                                    // during the sale window (same date logic as the hero tags)
+                                    echo '<span class="nav-book-thumb d-none d-md-block">';
+                                    echo '<img width="50px;" src="' . $imagePath . '" alt="">';
+                                    echo '</span>';
                                     echo '<span class="ml-2" style="white-space: break-spaces;">' . htmlspecialchars($book['title']) . '</span>';
                                     echo '</a>';
                                     echo '</li>';

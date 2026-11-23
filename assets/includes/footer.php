@@ -19,7 +19,7 @@
     <script src="<?php echo $base_url; ?>assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
     <script src="<?php echo $base_url; ?>assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
     <script src="<?php echo $base_url; ?>assets/js/argon-design-system.min.js?v=1.0.3" type="text/javascript"></script>
-    <script src="<?php echo $base_url; ?>assets/js/black-friday.js?v=1.0.1" type="text/javascript"></script>
+    <script src="<?php echo $base_url; ?>assets/js/black-friday.js?v=1.0.2" type="text/javascript"></script>
     <script>
         $(document).ready(() => {
             const year = new Date().getFullYear();

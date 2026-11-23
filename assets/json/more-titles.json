@@ -121,7 +121,7 @@
             "title": "As The Waters Cover The Sea",
             "menu": "default",
             "image_path": "assets/img/water-covers-sea.png",
-            "price_tag": false,
+            "price_tag": true,
             "buttons": [
                 {
                     "label": "Buy Now",
@@ -135,7 +135,7 @@
             "menu": "spanish",
             "alt_languages": ["the-power-of-one"],
             "image_path": "assets/img/new-images/el-poder-de-uno-thumbnail.png",
-            "price_tag": false,
+            "price_tag": true,
             "buttons": [
                 {
                     "label": "Comprar Ahora",
@@ -154,7 +154,7 @@
             "menu": "spanish",
             "alt_languages": ["fasting-forward"],
             "image_path": "assets/img/new-images/ayunar-para-avanzar-cover.jpg",
-            "price_tag": false,
+            "price_tag": true,
             "buttons": [
                 {
                     "label": "Comprar Ahora",
@@ -172,7 +172,7 @@
             "title": "Books Bundle",
             "menu": "default",
             "image_path": "assets/img/Father-Cry-Book-Cover-25.webp",
-            "price_tag": false,
+            "price_tag": true,
             "buttons": [
                 {
                     "label": "Buy Now",
