@@ -325,7 +325,7 @@ $is_home_folder = true; // Set this to true if the page is in the home folder
                     </div>
                     <div class="col-lg-5 hero">
                         <h1 class="display-3 dark-text order-lg-0">Black Friday Specials</h1>
-                        <p class="lead pb-0 dark-text order-lg-1"><em>Holiday Sale!</em> 50% off Gen Z, The Power of One, Fasting Forward & Father Cry. Nov 24–Dec 25. Don’t miss out!</p>
+                        <p class="lead pb-0 dark-text order-lg-1"><em>Holiday Sale!</em> 50% off all books and bundles, Spanish editions included. Nov 24–Dec 25. Don’t miss out!</p>
                         <div class="my-5">
                         <div class="d-none d-lg-block"> 
                             <a class="btn btn-secondary hero-btn mt-2" href="#books" data-astro-cid-xvd67bzn>Order Now</a> 
@@ -356,7 +356,7 @@ $is_home_folder = true; // Set this to true if the page is in the home folder
             </div>
             <div class="row">
                 <div class="col-7 mx-auto text-center">
-                    <p><em>Get ready for the ultimate reading experience with our Black Friday Specials! Enjoy 50% off on select titles and bundles, available from Nov 24 to Dec 25. Don't miss out on these incredible deals!</em></p>
+                    <p><em>Get ready for the ultimate reading experience with our Black Friday Specials! Enjoy 50% off all titles and bundles, available from Nov 24 to Dec 25. Don't miss out on these incredible deals!</em></p>
                 </div>
             </div>
         </div>
